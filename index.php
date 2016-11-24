@@ -5,5 +5,5 @@ define('TOKEN','weixinopen');
 
 require './wechat.class.php';
 $wechat = new WeChat(APPID, APPSECRET, TOKEN);
-$wechat->valid();//处理从微信平台发送的信息
+$wechat->responseMsg();//处理从微信平台发送的信息
 ?>
